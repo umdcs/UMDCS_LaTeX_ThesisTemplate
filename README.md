@@ -22,9 +22,9 @@ Creating the PDF and Running LaTeX
 To create your PDF file, you will need to issue the following
 commands:
 
-1. xelatex MS_CS_Thesis
-2. biber MS_CS_Thesis
-3. xelatex MS_CS_Thesis
+1. xelatex UMDCS_MSThesis
+2. biber UMDCS_MSThesis
+3. xelatex UMDCS_MSThesis
 
 The reason for the three steps is to first run LaTeX over your
 document for the first pass at finding references. The biber command
