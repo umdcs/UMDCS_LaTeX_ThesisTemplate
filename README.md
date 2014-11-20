@@ -30,9 +30,9 @@ The reason for the three steps is to first run LaTeX over your
 document for the first pass at finding references. The biber command
 will pull these references from your bibliography file and prepare
 them for inclusion in your document. The final step brings everything
-together and creates MS_CS_Thesis.pdf. Note that if you haven't
-modified your bibliography file (UMDCS_MSThesis.bib), then you needn't
-re-run the first two steps each time.
+together and creates the UMDCS_MSThesis.pdf file. Note that if you
+haven't modified your bibliography file (UMDCS_MSThesis.bib), then you
+needn't re-run the first two steps each time.
 
 ## A Note on Images:
 To include images, you will use the "includegraphics" macro or the
