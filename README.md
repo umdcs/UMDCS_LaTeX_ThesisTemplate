@@ -2,3 +2,32 @@ UMDThesisTemplate
 =================
 
 UMD Computer Science Thesis Template
+
+This is the UMD LaTeX style sheet and template.  Re-started by Pete
+Willemsen and fixed up by Andrew Larson, Scot Halverson, and Matt Overby.
+
+Creating the PDF and Running LaTeX
+-----------------------------------
+
+To create your PDF file, you will need to issue the following
+commands:
+
+xelatex MS_CS_Thesis
+biber MS_CS_Thesis
+xelatex MS_CS_Thesis
+
+The reason for the three steps is to first run LaTeX over your
+document for the first pass at finding references. The biber command
+will pull these references from your bibliography file and prepare
+them for inclusion in your document. The final step brings everything
+together and creates MS_CS_Thesis.pdf. Note that if you haven't
+modified your bibliography file (UMDCS_MSThesis.bib), then you needn't
+re-run the first two steps each time.
+
+## A Note on Images:
+To include images, you will use the "includegraphics" macro or the
+tikz package. However you will need to ensure your images are in one
+of the supported formats: either pdf, jpg or png.
+
+
+
