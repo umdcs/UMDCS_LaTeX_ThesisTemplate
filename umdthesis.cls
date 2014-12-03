@@ -1,9 +1,10 @@
 % -*- mode: LaTeX; -*-
 %
 % ------------------------ identification -----------------------------
-% Created by Paul Henning <paul-henning@uiowa.edu>
+% Originally created by Paul Henning <paul-henning@uiowa.edu>
+%
 \NeedsTeXFormat{LaTeX2e}[1995/06/01]
-\ProvidesClass{umdthesis}[2009/04/14 Univ. of MN Duluth Thesis Class]
+\ProvidesClass{umdthesis}[2014/12/01 Univ. of MN Duluth Thesis Class]
 % ChangeLog
 %
 % Wed Apr 15 17:28:07 CDT 2009	Andrew Larson <lars2865@d.umn.edu>
@@ -13,6 +14,9 @@
 %
 % Tue Apr  14 10:12:07 CDT 2009  Pete Willemsen <willemsn@d.umn.edu>
 %    * Resurrected the thesis class for use here at UMD.
+%
+% Nov 24 2014 Pete Willemsen <willemsn@d.umn.edu>
+% Brought this to current LaTeX (http://www.olivierverdier.com/posts/2013/07/15/modern-latex/).
 % ------------------------- initial code ------------------------------
 \RequirePackage{ifthen} 
 \newboolean{nofrontmatter} % Skip everything before the index
