@@ -1,4 +1,4 @@
-%M.S. Computer Science Thesis
+% M.S. Computer Science Thesis
 \documentclass{umdthesis}
 
 % This package will nag about old-style LaTeX use.  Feel free to
@@ -11,7 +11,15 @@
 % useful information for Modern LaTeX... some of it is included here.
 
 % Uses new biblatex system rather than traditional bibtex
-\usepackage[backref=true, isbn=true, url=true, firstinits=true, maxnames=20, style=numeric, backend=biber,]{biblatex}
+\usepackage[backref=true, isbn=true, url=true, firstinits=true, maxnames=20, style=numeric, backend=biber]{biblatex}
+
+% allows the Table of Contents to include the figure listings.
+\usepackage{tocbibind}
+% changes the name from Bibliography to References which is more appropriate for CS
+\DefineBibliographyStrings{english}{%
+  bibliography = {References},
+}
+%\renewcommand\bibname{References}
 
 % Your references are placed into the .bib file and then specified here:
 \addbibresource{UMDCS_MSThesis.bib}
@@ -27,15 +35,22 @@
 % This example uses C++, but there are many nice examples for other languages too.
 %
 % Nice C++ listings example derived from http://timmurphy.org/2014/01/27/displaying-code-in-latex-documents/
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.95,0.95,0.95}
+
 \lstset{
-    language=C++, % if you need to change the language...
-    frame=tb, % draw a frame at the top and bottom of the code block
-    tabsize=4, % tab space width
-    showstringspaces=false, % don't mark spaces in strings
-    numbers=left, % display line numbers on the left
-    commentstyle=\color{green}, % comment color
-    keywordstyle=\color{blue}, % keyword color
-    stringstyle=\color{red} % string color
+  backgroundcolor=\color{lbcolor},
+  language=C++, % if you need to change the language...
+  frame=lines, % draw a frame at the top and bottom of the code block
+  tabsize=3, % tab space width
+  captionpos=b,
+  basicstyle=\footnotesize,
+  breaklines=true,
+  showstringspaces=false, % don't mark spaces in strings
+  numbers=left, % display line numbers on the left
+%  commentstyle=\color{green}, % comment color
+  keywordstyle=\color{blue}, % keyword color
+  stringstyle=\color{red} % string color
 }
 
 \RequirePackage{amsmath}
@@ -98,7 +113,9 @@
         % You can add entries to the file UMDCS_Thesis.bib for your
         % references.  You then need to ``cite'' them in the tex files
         % by using the ~\cite{ReferenceID} tags.
+        %
+        % and make sure to include the bib in the TOC
 	\newpage
-        \printbibliography
+        \printbibliography[heading=bibintoc]
 	
 \end{document}

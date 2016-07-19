@@ -129,7 +129,8 @@
 	\ifthenelse{\boolean{nofrontmatter}}{}
 	{
 		\singlespace
-		\signaturepg
+                % Signature Page is no longer required/needed by the Grad School
+		% \signaturepg   
 		\titlepg
 		\copyrightpg
 		\umdtprefixpg
@@ -138,9 +139,9 @@
 		\abstractpg
 		\tableofcontents
 
-		\ifthenelse{\boolean{notables}} {}
-		{% Tables?  
-			%\listoftables \newpage
+		\ifthenelse{\boolean{notables}}{}
+		{ % Tables?  
+			\listoftables \newpage
 		}
 		\ifthenelse{\boolean{nofigures}}{}
 		{ % Figures?
@@ -241,8 +242,9 @@
 % 
 % ACKPG - command for setting up the acknowledgement page
 %
-\newcommand{\ackpg}{%
-	\ifthenelse{\boolean{ackpage}}%
+\newcommand{\ackpg}
+{
+	\ifthenelse{\boolean{ackpage}}
 	{
 		\begin{center}
 			Acknowledgements
@@ -251,8 +253,8 @@
 		\input{\@ackfile}
 		\vfill
 		\newpage
-	}%
-	{}%
+	}
+        {}
 }
 
 
@@ -331,3 +333,4 @@
 	\vfill
 	\newpage
 }
+
