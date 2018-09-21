@@ -11,8 +11,11 @@
 % useful information for Modern LaTeX... some of it is included here.
 
 % Uses new biblatex system rather than traditional bibtex
-% \usepackage[backref=true, isbn=true, url=true, firstinits=true, maxnames=20, style=apa, backend=biber]{biblatex}
-\usepackage[style=apa, backend=biber]{biblatex}
+% This uses the Author-Year style for both citations and references
+\usepackage[style=authoryear, citestyle=authoryear, backref=true, isbn=true, url=true, backend=biber]{biblatex}
+
+% There doesn't seem to much different if you use the apa style in the same way
+\usepackage[style=apa, citestyle=apa, backref=true, isbn=true, url=true, backend=biber]{biblatex}
 
 % allows the Table of Contents to include the figure listings.
 \usepackage{tocbibind}
@@ -20,7 +23,6 @@
 \DefineBibliographyStrings{english}{%
   bibliography = {References},
 }
-%\renewcommand\bibname{References}
 
 % Your references are placed into the .bib file and then specified here:
 \addbibresource{UMDCS_MSThesis.bib}
