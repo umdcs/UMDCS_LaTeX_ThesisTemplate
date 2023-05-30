@@ -43,7 +43,7 @@
 % \RequirePackage[utf8]{inputenc}  % not needed when xelatex is used to create the PDF
 \RequirePackage{tikz}
 \RequirePackage{fancyhdr,indentfirst}
-\RequirePackage[margin=1in,left=1.5in, bottom=1.5in]{geometry}
+\RequirePackage[margin=1.05in,left=1.5in, bottom=1.5in]{geometry}
 % \RequirePackage[pdftex]{graphicx} 
 \RequirePackage{setspace}
 \RequirePackage[pdfusetitle,colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
