@@ -64,61 +64,76 @@
 \newcommand{\TODO}[1]{\colorbox{yellow}{\textbf{TODO}: #1}}
 
 \title{Your Great Title For Your Thesis}
-\author{Pete Willemsen}
+\author{Your Name Here}
 
-\advisor{The Doctor}  
+% Place your advisor's name here.
+\advisor{Dr. The Doctor}  
 
+% The year is generated when you create the PDF.
 \copyrightyear{\number\the\year} 
 
+% if you have acknowledgments or dedications to make, there 
+% are files you can edit to include them here: acknowledge.tex 
+% and dedication.tex
 \ackfile{acknowledge} 
 \dedication{dedication}
+
+% Make sure you place your abstract in the abstract.tex file
 \abstractfile{abstract}
 
 \begin{document} 
- 
+
+    % The frontmatter is all the boilerplate pages that are needed 
+    % for the thesis
 	\frontmatter 
  
-        % You could save some space when initially printing (if you
+    % You could save some space when initially printing (if you
 	% really need to) by uncommenting this line to single
 	% space
-        %
-        % \singlespace
+    %
+    % \singlespace
       
-        % Ideally the Introduction to your thesis 
+    % Ideally the Introduction to your thesis.  You will want to edit the
+    % cahp_intro.tex file and it will be included here.
 	\include{chap_intro} 
 	 
-        % Any background necessary to understand your thesis.  This 
-        % can also contain the related work too. 
+    % Any background necessary to understand your thesis.  This 
+    % can also contain the related work too.  You'll want to edit the
+    % chap_background.tex file and it will be included.
 	\include{chap_background} 
  
-        % Of course, if you wanted a separate chapter for Related
-        % Work, you could make one too. 
+    % If you feel you need or want a separate chapter for related work, or
+    % just a file to contain it, you can edit the chap_relatedwork.tex file
+    % as well.  And, then uncomment the line below.
 	% \include{chap_relatedwork}     
 
-        % The major content for your thesis!  What did you do and how   
-        % did you do it!
+    % The major content for your thesis!  What did you do and how   
+    % did you do it!  Edit the chap_implementation.tex file.
 	\include{chap_implementation}  
 
-        % It's always good to have a results chapter so you can 
-        % present how well your ideas and implementations worked
+    % It's always good to have a results chapter so you can 
+    % present how well your ideas and implementations worked.  The
+    % file chap_results.tex is the one to edit for this.
 	\include{chap_results}
 
-        % Time to wrap up the thesis with a discussion of your ideas
-        % and knowledge that you generated, along with any important
-        % insights, or things you learned.  You can include ideas for
-        % future extensions and effort here too.
+    % Time to wrap up the thesis with a discussion of your ideas
+    % and knowledge that you generated, along with any important
+    % insights, or things you learned.  You can include ideas for
+    % future extensions and effort here too.
 	\include{chap_conclusion}
 	
-        % And finally, don't forget the references and bibliography.
-        % You can add entries to the file UMDCS_Thesis.bib for your
-        % references.  You then need to ``cite'' them in the tex files
-        % by using the ~\cite{ReferenceID} tags.
-        %
-        % and make sure to include the bib in the TOC
+    % And finally, don't forget the references and bibliography.
+    % You can add entries to the file UMDCS_Thesis.bib for your
+    % references.  You then need to ``cite'' them in the tex files
+    % by using the ~\cite{ReferenceID} tags.
+    %
+    % and make sure to include the bib in the TOC, which is
+    % included below already with the heading=bibintoc option.
 	\newpage
-        \printbibliography[heading=bibintoc]
+    \printbibliography[heading=bibintoc]
 	
-        % If you need an appendix (or appendices), they can be added here 
+    % If you need an appendix (or appendices), they can be added here 
+    % See the appendix.tex file for some more info.
 	\include{appendix}	 
 	
 \end{document}
