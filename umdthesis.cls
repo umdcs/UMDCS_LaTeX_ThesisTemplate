@@ -4,7 +4,7 @@
 % Originally created by Paul Henning <paul-henning@uiowa.edu>
 %
 \NeedsTeXFormat{LaTeX2e}[1995/06/01]
-\ProvidesClass{umdthesis}[2014/12/01 Univ. of MN Duluth Thesis Class]
+\ProvidesClass{umdthesis}[2024/05/20 Univ. of MN Duluth Thesis Class]
 % ChangeLog
 %
 % Wed Apr 15 17:28:07 CDT 2009	Andrew Larson <lars2865@d.umn.edu>

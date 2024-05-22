@@ -5,6 +5,8 @@
 
 You may need a nice figure, which you can algorithmically render using the Tikz package. You should really check out the Texample web site where several nice tikz examples are provided (http://www.texample.net/tikz/examples/all/).
 
+% this is how you include figures and this happens to include a tikzpicture which
+% is a programming language for generating diagrams and other useful items.
 \begin{figure}
 \centering
 \begin{tikzpicture}
@@ -26,22 +28,24 @@ You may need a nice figure, which you can algorithmically render using the Tikz 
 
 \section{Initial Section}
 
+Itemized lists are often used:
 \begin{itemize}
-\item What language am I doing this in?
-\item What is the question the urban p[lanner want solved?
+\item What language the project was coded in?
+\item What is the question the urban planners want solved?
 \end{itemize}
  
-Math is really nice with \LaTeX too!
+Math is really nice with \LaTeX too!  Wonder what the following equation can say about the world?
 
 \[L_{s}(\vec{k_{o}}) = L_{e}(\vec{k_{o}}) \int_{\text{all $\vec{k_{i}}$}} \rho(\vec{k}_i,\vec{k}_o) L_f(\vec{k}_i) \cos\theta_i d\sigma_i \]
 
+Enumerated lists are helpful too
 \begin{enumerate}
-\item What languge am I doing this in?
-\item What is the question the urban p[lanner want solved?
-\item new item
+\item Step 1
+\item Step 2
+\item Step 3
 \begin{itemize}
-\item new 1
-\item new 2
+\item Important part of Step 3
+\item Another important part of Step 3
 \end{itemize}
 \end{enumerate}
 
@@ -49,6 +53,8 @@ A graph rendered with the Tikz package is shown in \autoref{fig:tikzexample}.
 
 \subsection{Subsection One}
 \subsection{Subsection Two}
+\subsubsection{Here's a Sub-Sub-Section}
+\subsubsection{Here's another Sub-Sub-Section}
 \subsection{Subsection Three}
 
 \section{New Section For Next Important Topic}
@@ -56,7 +62,7 @@ A graph rendered with the Tikz package is shown in \autoref{fig:tikzexample}.
 \subsection{Algorithm Initialization}
 \subsection{Atomic Operations}
 
-You may even need code in your thesis. Here is a way to nicely include code with \LaTeX using the listings package.
+You may even need code in your thesis. Here is a way to nicely include code with the \textit{listings} package in \LaTeX:
 {\singlespace
 \begin{lstlisting}
 for (unsigned int idx=0; idx<maxSize; idx++) {
@@ -64,10 +70,11 @@ for (unsigned int idx=0; idx<maxSize; idx++) {
 }
 \end{lstlisting}
 }
+If you need to modify some of the style of the listings package for this template, you may want to check the class style file included with this template: \textit{umdthesis.cls}.
 
 \subsection{Programming Style}
 \subsubsection{Explaining Fine Detail Here}
 
-\TODO{Make sure to finish this!}
+\TODO{Make sure to finish this description!}
 
 \subsubsection{Last Subsection}
